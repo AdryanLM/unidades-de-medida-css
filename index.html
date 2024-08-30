@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de Medida em CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Unidades de Medida em CSS</h1>
+    </header>
+    
+    <main>
+        <section class="units">
+            <h2>Unidades Absolutas</h2>
+            <p>As unidades absolutas têm um tamanho fixo e não dependem do contexto do elemento pai. Elas são consistentes em diferentes dispositivos e configurações de tela.</p>
+            <ul>
+                <li>
+                    <h3>Pixels (px)</h3>
+                    <p>O pixel é a unidade de medida mais usada. Representa um ponto na tela.</p>
+                    <div class="example" style="width: 100px; height: 100px; background-color: #4CAF50;"></div>
+                    <p><code>width: 100px;</code></p>
+                </li>
+                <li>
+                    <h3>Pontos (pt)</h3>
+                    <p>Usado principalmente em tipografia. Um ponto é igual a 1/72 de uma polegada.</p>
+                    <div class="example" style="font-size: 12pt; background-color: #FFC107; color: black;">Texto</div>
+                    <p><code>font-size: 12pt;</code></p>
+                </li>
+                <li>
+                    <h3>Centímetros (cm)</h3>
+                    <p>Unidade métrica onde 1 cm é igual a 1 centímetro.</p>
+                    <div class="example" style="width: 5cm; height: 5cm; background-color: #FF5733;"></div>
+                    <p><code>width: 5cm;</code></p>
+                </li>
+                <li>
+                    <h3>Milímetros (mm)</h3>
+                    <p>Unidade métrica onde 1 mm é igual a 1 milímetro.</p>
+                    <div class="example" style="width: 50mm; height: 50mm; background-color: #33C3F0;"></div>
+                    <p><code>width: 50mm;</code></p>
+                </li>
+                <li>
+                    <h3>Polegadas (in)</h3>
+                    <p>Unidade imperial onde 1 polegada é igual a 2.54 centímetros.</p>
+                    <div class="example" style="width: 2in; height: 2in; background-color: #9C27B0;"></div>
+                    <p><code>width: 2in;</code></p>
+                </li>
+                <li>
+                    <h3>Picas (pc)</h3>
+                    <p>Usado em tipografia, onde 1 pica é igual a 12 pontos.</p>
+                    <div class="example" style="font-size: 1pc; background-color: #E91E63; color: black;">Texto</div>
+                    <p><code>font-size: 1pc;</code></p>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="units">
+            <h2>Unidades Relativas</h2>
+            <p>As unidades relativas dependem do tamanho do elemento pai ou da viewport, e podem variar conforme o contexto.</p>
+            <ul>
+                <li>
+                    <h3>Percentagem (%)</h3>
+                    <p>Unidade relativa ao tamanho do elemento pai. 100% é igual ao tamanho completo do pai.</p>
+                    <div class="example" style="width: 50%; height: 100px; background-color: #4CAF50;"></div>
+                    <p><code>width: 50%;</code></p>
+                </li>
+                <li>
+                    <h3>Em (em)</h3>
+                    <p>Unidade relativa ao tamanho da fonte do elemento pai. 1em é igual ao tamanho da fonte do pai.</p>
+                    <div class="example" style="font-size: 2em; background-color: #FFC107; color: black;">Texto</div>
+                    <p><code>font-size: 2em;</code></p>
+                </li>
+                <li>
+                    <h3>Rem (rem)</h3>
+                    <p>Unidade relativa ao tamanho da fonte do elemento raiz (html). 1rem é igual ao tamanho da fonte do html.</p>
+                    <div class="example" style="font-size: 1.5rem; background-color: #FF5733; color: black;">Texto</div>
+                    <p><code>font-size: 1.5rem;</code></p>
+                </li>
+                <li>
+                    <h3>Viewport Width (vw)</h3>
+                    <p>Unidade relativa à largura da viewport. 1vw é igual a 1% da largura da viewport.</p>
+                    <div class="example" style="width: 50vw; height: 100px; background-color: #33C3F0;"></div>
+                    <p><code>width: 50vw;</code></p>
+                </li>
+                <li>
+                    <h3>Viewport Height (vh)</h3>
+                    <p>Unidade relativa à altura da viewport. 1vh é igual a 1% da altura da viewport.</p>
+                    <div class="example" style="width: 100%; height: 50vh; background-color: #9C27B0;"></div>
+                    <p><code>height: 50vh;</code></p>
+                </li>
+                <li>
+                    <h3>Vmin</h3>
+                    <p>Unidade relativa ao menor valor entre a largura e a altura da viewport. 1vmin é igual a 1% do menor valor.</p>
+                    <div class="example" style="width: 50vmin; height: 50vmin; background-color: #E91E63;"></div>
+                    <p><code>width: 50vmin;</code></p>
+                </li>
+                <li>
+                    <h3>Vmax</h3>
+                    <p>Unidade relativa ao maior valor entre a largura e a altura da viewport. 1vmax é igual a 1% do maior valor.</p>
+                    <div class="example" style="width: 50vmax; height: 50vmax; background-color: #4CAF50;"></div>
+                    <p><code>width: 50vmax;</code></p>
+                </li>
+                <li>
+                    <h3>Ch (ch)</h3>
+                    <p>Unidade relativa à largura do caractere "0" da fonte do elemento. 1ch é igual à largura do caractere "0".</p>
+                    <div class="example" style="width: 20ch; height: 50px; background-color: #FFC107;"></div>
+                    <p><code>width: 20ch;</code></p>
+                </li>
+                <li>
+                    <h3>Ex (ex)</h3>
+                    <p>Unidade relativa à altura da letra "x" da fonte do elemento. 1ex é aproximadamente igual à altura da letra "x".</p>
+                    <div class="example" style="font-size: 2ex; background-color: #FF5733; color: black;">Texto</div>
+                    <p><code>font-size: 2ex;</code></p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Unidades de Medida em CSS</p>
+    </footer>
+</body>
+</html>
